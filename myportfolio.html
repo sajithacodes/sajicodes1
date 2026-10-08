@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sajitha S | Portfolio</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: #f5f7fa;
+            color: #222;
+        }
+
+        /* Navbar */
+        nav {
+            background: #1e293b;
+            padding: 18px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav h2 {
+            color: white;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 25px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+        }
+
+        nav ul li a:hover {
+            color: #38bdf8;
+        }
+
+        /* Home */
+        #home {
+            min-height: 90vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 30px;
+            background: linear-gradient(135deg, #dbeafe, #f0f9ff);
+        }
+
+        .home-content h1 {
+            font-size: 50px;
+            margin-bottom: 15px;
+            color: #1e293b;
+        }
+
+        .home-content h3 {
+            font-size: 25px;
+            color: #0284c7;
+            margin-bottom: 15px;
+        }
+
+        .home-content p {
+            max-width: 600px;
+            margin: auto;
+            line-height: 1.6;
+        }
+
+        .btn {
+            display: inline-block;
+            margin-top: 25px;
+            padding: 12px 25px;
+            background: #0284c7;
+            color: white;
+            text-decoration: none;
+            border-radius: 25px;
+        }
+
+        .btn:hover {
+            background: #0369a1;
+        }
+
+        /* Common Section */
+        section {
+            padding: 70px 10%;
+        }
+
+        section h2 {
+            text-align: center;
+            font-size: 32px;
+            margin-bottom: 35px;
+            color: #1e293b;
+        }
+
+        /* About */
+        .about {
+            max-width: 800px;
+            margin: auto;
+            text-align: center;
+            line-height: 1.8;
+        }
+
+        /* Skills */
+        .skills-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .skill {
+            background: white;
+            padding: 20px 35px;
+            border-radius: 10px;
+            box-shadow: 0 3px 10px #ccc;
+            font-weight: bold;
+        }
+
+        /* Projects */
+        .projects-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 25px;
+        }
+
+        .project {
+            background: white;
+            width: 300px;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 3px 10px #ccc;
+        }
+
+        .project h3 {
+            color: #0284c7;
+            margin-bottom: 12px;
+        }
+
+        .project p {
+            line-height: 1.6;
+        }
+
+        /* Education */
+        .education {
+            text-align: center;
+            line-height: 2;
+        }
+
+        /* Contact */
+        .contact {
+            text-align: center;
+            line-height: 2;
+        }
+
+        .contact a {
+            color: #0284c7;
+            text-decoration: none;
+        }
+
+        /* Footer */
+        footer {
+            background: #1e293b;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        /* Mobile */
+        @media (max-width: 700px) {
+            nav {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            nav ul {
+                gap: 12px;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            .home-content h1 {
+                font-size: 35px;
+            }
+
+            .home-content h3 {
+                font-size: 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav>
+        <h2>Sajitha S</h2>
+
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Home -->
+    <section id="home">
+        <div class="home-content">
+            <h1>Hello, I'm Sajitha S</h1>
+            <h3>Computer Science Student</h3>
+
+            <p>
+                Welcome to my personal portfolio. I am interested in
+                web development and programming. I enjoy learning new
+                technologies and creating simple projects.
+            </p>
+
+            <a href="#projects" class="btn">View My Projects</a>
+        </div>
+    </section>
+
+    <!-- About -->
+    <section id="about">
+        <h2>About Me</h2>
+
+        <div class="about">
+            <p>
+                I am a Computer Science student at J.N.N Institute of
+                Engineering. I am interested in web development,
+                programming and software development. I like building
+                simple and useful applications while improving my
+                technical skills.
+            </p>
+        </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills">
+        <h2>My Skills</h2>
+
+        <div class="skills-container">
+            <div class="skill">HTML</div>
+            <div class="skill">CSS</div>
+            <div class="skill">JavaScript</div>
+            <div class="skill">Java</div>
+            <div class="skill">Python</div>
+            <div class="skill">Git & GitHub</div>
+        </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects">
+        <h2>My Projects</h2>
+
+        <div class="projects-container">
+
+            <div class="project">
+                <h3>Eventify</h3>
+                <p>
+                    An event management and booking system developed
+                    using HTML, CSS and JavaScript. It provides event
+                    information and booking status through a simple
+                    user-friendly interface.
+                </p>
+            </div>
+
+            <div class="project">
+                <h3>Student Registration Form</h3>
+                <p>
+                    A simple student registration form created using
+                    HTML, CSS and JavaScript with basic form interaction
+                    and validation.
+                </p>
+            </div>
+
+            <div class="project">
+                <h3>Java Programs</h3>
+                <p>
+                    Developed beginner-friendly Java programs using
+                    object-oriented programming concepts, conditions,
+                    loops and methods.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Education -->
+    <section id="education">
+        <h2>Education</h2>
+
+        <div class="education">
+            <h3>J.N.N Institute of Engineering</h3>
+            <p>Computer Science Engineering</p>
+            <p>Currently Pursuing</p>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact">
+        <h2>Contact Me</h2>
+
+        <div class="contact">
+            <p>📧 Email: sajithasrinivasan@gmail.com</p>
+            <p>📱 Phone: +91 8778942427</p>
+            <p>
+                💻 GitHub:
+                <a href="#" target="_blank">My GitHub Profile</a>
+            </p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 Sajitha S | Personal Portfolio</p>
+    </footer>
+
+    <script>
+        // Simple welcome message
+        console.log("Welcome to Sajitha's Portfolio!");
+
+        // Button click message
+        document.querySelector(".btn").addEventListener("click", function () {
+            console.log("Projects section opened");
+        });
+    </script>
+
+</body>
+</html>
